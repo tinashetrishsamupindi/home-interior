@@ -10,8 +10,8 @@ function Navbar() {
         </div>
         <div className='px-3 text-white space-x-6'>
             <a href='/' className='bg-white p-2 text-black rounded-md font-bold'> Home </a>
-            <a href='./About' className='bg-white p-2 text-black rounded-md font-bold'> About Us </a>
-            <a href='/' className='bg-white p-2 text-black rounded-md font-bold'> Contact </a>
+            <a href='./#About-Us' className='bg-white p-2 text-black rounded-md font-bold'> About Us </a>
+            <a href='/#contact' className='bg-white p-2 text-black rounded-md font-bold'> Contact </a>
         </div>
 
         </div>
