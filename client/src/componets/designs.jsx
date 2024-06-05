@@ -1,37 +1,31 @@
 import React from 'react'
+import image1 from '../assets/image1.jpg';
+import image3 from '../assets/image3.jpg';
+import image9 from '../assets/image9.jpg';
+import image4 from '../assets/image4.jpg';
+import image13 from '../assets/image13.jpg';
 
-function designs() {
+function Designs() {
   return (
-    <div>
-    <div className="flex-warp justify-center p-8">
-        <div className="w-1/4 p-4"></div>
-        <img src="/path/to/image1.jpg" alt="Kitchen"
-        className="w-full h-auto" />
-        <p className="text-center mt-2">Kitchen designs</p>
-    </div>
-
-    <div className="flex-warp justify-center p-8">
-    <div className="w-1/4 p-4"
-    <img src="/path/to/image2.jpg" alt="Living-room"
-    className="w-full h-auto" />
-    <p className="text-center mt-2">Living-room designs</p>
-    </div>
-
-    <div className="flex-warp justify-center p-8">
-    <div className="w-1/4 p-4"
-    <img src="/path/to/image3.jpg" alt="bathroom"
-    className="w-full h-auto" />
-    <p className="text-center mt-2">Bathroom designs</p>
-    </div>
-    
-    <div className="flex-warp justify-center p-8">
-    <div className="w-1/4 p-4"
-    <img src="/path/to/image4.jpg" alt="bedroom"
-    className="w-full h-auto" />
-    <p className="text-center mt-2">Bedroom designs</p>
-    </div>
+    <div className='grid grid-cols-4 gap-3 pt-8 p-10'>
+      <div>
+        <img className='rounded-md' src={image3}  alt='img' />
+        <p className='flex justify-center mt-3 font-bold text-xl tracking-wide'> Kitchen </p>
+      </div>
+      <div>
+        <img className='rounded-md' src={image9} width='720' height='450' alt='img' />
+        <p className='flex justify-center mt-3 font-bold text-xl tracking-wide'> Living Room </p>
+      </div>
+      <div>
+        <img className='rounded-md' src={image4} alt='img' />
+        <p className='flex justify-center mt-3 font-bold text-xl tracking-wide'> Bathroom </p>
+      </div>
+      <div>
+        <img className='rounded-md' src={image13} alt='img' />
+        <p className='flex justify-center mt-3 font-bold text-xl tracking-wide'> Bedroom </p>
+      </div>
     </div>
   )
 }
 
-export default designs
+export default Designs;
